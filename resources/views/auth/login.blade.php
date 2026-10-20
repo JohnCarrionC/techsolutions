@@ -27,6 +27,11 @@
         .divider:not(:empty)::after{margin-left:.75em}
         .btn-github{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:11px;background:#24292e;color:#fff;border:0;border-radius:8px;font-size:15px;font-weight:600;text-decoration:none;cursor:pointer;transition:background .2s}
         .btn-github:hover{background:#1b1f23}
+
+        /* Estilos para el enlace de registro */
+        .register-link{text-align:center;margin-top:20px;font-size:13px;color:#64748b}
+        .register-link a{color:#2563eb;font-weight:600;text-decoration:none}
+        .register-link a:hover{text-decoration:underline}
     </style>
 </head>
 <body>
@@ -56,6 +61,11 @@
         <a href="{{ route('auth.github') }}" class="btn-github">
             <i class="fa-brands fa-github text-lg"></i> Iniciar sesión con GitHub
         </a>
+
+        <!-- Enlace para registrar un nuevo usuario -->
+        <div class="register-link">
+            ¿No tienes una cuenta? <a href="{{ route('register') }}">Regístrate aquí</a>
+        </div>
     </form>
 </body>
 </html>
